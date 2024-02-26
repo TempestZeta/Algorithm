@@ -12,7 +12,7 @@ class TwoSumTest {
         int[] nums = {2,7,11,15};
         int target = 9;
 
-        int[] result = twoSum.twoSum(nums, target);
+        int[] result = twoSum.twoSumRefactor(nums, target);
 
         Assumptions.assumeTrue(result[0] == 0);
         Assumptions.assumeTrue(result[1] == 1);
@@ -25,7 +25,7 @@ class TwoSumTest {
         int[] nums = {3,2,4};
         int target = 6;
 
-        int[] result = twoSum.twoSum(nums, target);
+        int[] result = twoSum.twoSumRefactor(nums, target);
 
         Assumptions.assumeTrue(result[0] == 1);
         Assumptions.assumeTrue(result[1] == 2);
@@ -38,7 +38,7 @@ class TwoSumTest {
         int[] nums = {3,3};
         int target = 6;
 
-        int[] result = twoSum.twoSum(nums, target);
+        int[] result = twoSum.twoSumRefactor(nums, target);
 
         Assumptions.assumeTrue(result[0] == 0);
         Assumptions.assumeTrue(result[1] == 1);

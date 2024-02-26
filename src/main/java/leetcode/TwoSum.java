@@ -82,4 +82,17 @@ public class TwoSum {
         return result;
     }
 
+    public int[] twoSumRefactor(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for(int idx = 0; idx < nums.length; idx++) {
+            int required = target - nums[idx];
+            if(map.containsKey(required)) {
+                return new int[] {map.get(required), idx};
+            }
+            map.put(nums[idx], idx);
+        }
+
+        return new int[2];
+    }
 }
